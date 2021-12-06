@@ -3,6 +3,8 @@
 <div align="center">
   
   # FUNDAMENTOS DO REACT
+  
+</div>
 
   Esse repositório destina-se aos estudos dos fundamentos do REACT, acompanhado pelo curso [JSTACK](www.jstack.com.br), ministrado pelo Mateus Silva.
 
@@ -10,4 +12,4 @@
 
   Destino esse repositório para o armazenamento dos respectivos pastas e arquivos gerados para construir uma aplicação web com React partindo do total zero, configurando cada etapa de modo a compreender o porque de usar o React para construir aplicações web escaláveis e de fácil manutenção.
 
-</div>
+--- 
