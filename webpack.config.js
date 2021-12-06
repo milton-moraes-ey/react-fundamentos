@@ -6,7 +6,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle[hash].js',
+    filename: 'bundle[fullhash].js',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -18,10 +18,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       }
     ]
+  },
+  mode: 'development',
+  devServer: {
+    port: 3000
   }
 };
