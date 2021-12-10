@@ -6,18 +6,47 @@ const titulo01 = 'Titulo do primeiro Post';
 
 
 function App() {
+
   return (
     <>
-      <Header title="Meu BLOG">
+      <Header>
         <h2>Posts da semana</h2>
       </Header>
 
       <hr />
 
-      <Post title={titulo01} subtitle="Subtítulo da notícia 01" />
-      <Post title="Título do Post 02" subtitle="Subtítulo da notícia 02" />
-      <Post title="Título do Post 03" subtitle="Subtítulo da notícia 03" />
-      <Post title="Título do Post 04" subtitle="Subtítulo da notícia 04" />
+      <Post
+        likes={20}
+        post={{
+          title: titulo01,
+          subtitle: 'Subtítulo da notícia 01'
+        }}
+      />
+
+      <Post
+        likes={10}
+        post={{
+          title: 'Título 02',
+          subtitle: 'Subtítulo da notícia 02'
+        }}
+      />
+
+      <Post
+        likes={50}
+        post={{
+          title: 'Título 03',
+          subtitle: 'Subtítulo da notícia 04'
+        }}
+      />
+
+      <Post
+        likes={25}
+        post={{
+          title: 'Título 04',
+          subtitle: 'Subtítulo da notícia 04'
+        }}
+      />
+
 
     </>
   );

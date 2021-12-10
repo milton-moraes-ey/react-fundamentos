@@ -106,7 +106,7 @@ function App() {
   return (
     <>
       <Header title="Meu BLOG">
-        <h2>Posts da semana</h2>
+        <h2>Posts da semana</h2> // recebido via props children
       </Header>
       <hr />
       <Post title={titulo01} subtitle="Subtítulo da notícia 01" />
@@ -117,3 +117,5 @@ function App() {
   );
 }
 ```
+---
+
